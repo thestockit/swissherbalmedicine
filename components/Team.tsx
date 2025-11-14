@@ -1,7 +1,7 @@
 "use client";
-
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 const Teams = () => {
@@ -12,7 +12,7 @@ const Teams = () => {
         {/* Left - Image */}
         <div className="relative w-full md:w-1/2 h-80 md:h-[420px] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/dr-galina.jpg" // make sure this image exists in /public
+            src="/doctor2.webp"
             alt="Dr. VOLODCHENKO Galina"
             fill
             className="object-cover"
@@ -24,6 +24,7 @@ const Teams = () => {
           <p className="uppercase text-sm tracking-widest text-gray-500 mb-2">
             Huisarts
           </p>
+
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Dr. VOLODCHENKO Galina
           </h2>
@@ -43,9 +44,12 @@ const Teams = () => {
             ))}
           </ul>
 
-          <button className="bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300">
-            Click Here
-          </button>
+          <Link
+            href="/team"
+            className="inline-block bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
+          >
+            Meer info
+          </Link>
         </div>
       </div>
 
@@ -54,7 +58,7 @@ const Teams = () => {
         {/* Right - Image */}
         <div className="relative w-full md:w-1/2 h-80 md:h-[420px] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/dr-adnan.jpg" // make sure this image exists in /public
+            src="/doctor1.webp"
             alt="Dr. AMIN Adnan"
             fill
             className="object-cover"
@@ -66,7 +70,10 @@ const Teams = () => {
           <p className="uppercase text-sm tracking-widest text-gray-500 mb-2">
             Huisarts
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Dr. AMIN Adnan</h2>
+
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            Dr. AMIN Adnan
+          </h2>
 
           <ul className="space-y-3 mb-8">
             {[
@@ -83,9 +90,12 @@ const Teams = () => {
             ))}
           </ul>
 
-          <button className="bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300">
-            Click Here
-          </button>
+          <Link
+            href="/team"
+            className="inline-block bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
+          >
+            Meer info
+          </Link>
         </div>
       </div>
     </section>

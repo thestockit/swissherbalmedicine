@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import React from "react";
 
@@ -66,7 +65,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
           <p>
             Huisartsenpraktijk Tempelhof © {new Date().getFullYear()} | Webdesign by{" "}
-            <span className="font-medium">Ringphone</span>
+            <span className="font-medium">The Stockit</span>
           </p>
           <Link href="#" className="hover:underline">
             Privacy Policy

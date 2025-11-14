@@ -5,22 +5,22 @@ import Image from "next/image";
 const AppointmentPage = () => {
   return (
     <div className="w-full min-h-screen bg-white">
-      {/* 🔹 Hero Section */}
+
       <section className="relative w-full h-[70vh] flex flex-col justify-center items-center text-center text-white overflow-hidden">
-        {/* Fixed background image */}
+
         <div className="absolute inset-0">
           <Image
-            src="/clinic-building.jpg" // 🧠 place your image in /public
+            src="/afspraak.avif" 
             alt="Clinic Entrance"
             fill
             priority
             className="object-cover object-center"
           />
-          {/* 🔹 Fixed background effect */}
+
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
         </div>
 
-        {/* 🔹 Hero content */}
+
         <div className="relative z-10 px-4">
           <button className="bg-red-600 hover:bg-red-700 text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
             Maak online een afspraak

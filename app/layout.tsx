@@ -1,4 +1,3 @@
-// C:\Users\shehzad\Desktop\Clinic\app\layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import TopBar from "../components/TopBar";

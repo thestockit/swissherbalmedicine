@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
       {/* 🔹 Background image */}
       <Image
-        src="/hospital.jpg" // Replace with your own image in /public
+        src="/hero.jpg" 
         alt="Clinic Hero Background"
         fill
         priority

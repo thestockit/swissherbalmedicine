@@ -1,18 +1,19 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const doctors = [
   {
     name: "Dr. VOLODCHENKO Galina",
     title: "Huisarts",
-    image: "/galina.jpg", // Make sure this image is in /public
+    image: "/doctor1.webp",
   },
   {
     name: "Dr. AMIN Adnan",
     title: "Huisarts",
-    image: "/adnan.jpg", // Make sure this image is in /public
+    image: "/doctor2.webp",
   },
 ];
 
@@ -47,6 +48,7 @@ const Doctors = () => {
                   className="object-cover"
                 />
               </div>
+
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold text-gray-800 mb-1">
                   {doctor.name}
@@ -57,11 +59,14 @@ const Doctors = () => {
           ))}
         </div>
 
-        {/* Button */}
+        {/* Button Redirect */}
         <div className="mt-10">
-          <button className="bg-red-600 text-white px-6 py-3 rounded-full font-medium hover:bg-red-700 transition-all">
+          <Link
+            href="/team"
+            className="bg-red-600 text-white px-6 py-3 rounded-full font-medium hover:bg-red-700 transition-all inline-block"
+          >
             Meer info
-          </button>
+          </Link>
         </div>
       </div>
     </section>
