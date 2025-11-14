@@ -1,83 +1,90 @@
 "use client";
-
 import React from "react";
 import Image from "next/image";
-import { Check } from "lucide-react";
 
-export default function WachtpostRegeling() {
+const praktishchePage = () => {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full min-h-screen bg-white">
 
-      {/* ================= Title ================= */}
-      <section className="pt-16 pb-10 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-red-700">
-          Wachtpost regeling 1733
-        </h1>
+      <section className="relative w-full h-[70vh] flex flex-col justify-center items-center text-center text-white overflow-hidden">
+
+        <div className="absolute inset-0">
+          <Image
+            src="/afspraak.avif" 
+            alt="Clinic Entrance"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+
+          <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
+        </div>
+
+
+        <div className="relative z-10 px-4">
+          <button className="bg-red-600 hover:bg-red-700 text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
+            Maak online een afspraak
+          </button>
+
+          <p className="mt-4 text-sm md:text-base text-gray-100 tracking-wide">
+            OF BEL ONS
+          </p>
+
+          <p className="text-2xl md:text-3xl font-bold text-red-400 mt-1">
+            016 89 90 90
+          </p>
+        </div>
       </section>
 
-      {/* ================= 3 Column Layout ================= */}
-      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6 pb-8">
-
-        {/* Left Column */}
-        <div className="space-y-10">
-          <div>
-            <h3 className="flex items-center gap-2 text-xl font-semibold text-gray-900 mb-2">
-              <Check className="text-red-600" /> Weekdagen
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Tijdens de weekdagen is de wachtpost open vanaf{" "}
-              <strong>18u tot 8u</strong>.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="flex items-center gap-2 text-xl font-semibold text-gray-900 mb-2">
-              <Check className="text-red-600" /> Weekend en feestdagen
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Tijdens het weekend en op feestdagen is de wachtpost open van{" "}
-              <strong>vrijdag 18u tot maandag 8u</strong> doorlopend.
-            </p>
-          </div>
+      {/* 🔹 Scrollable Content */}
+      <section className="max-w-4xl mx-auto px-6 py-16 text-gray-800 space-y-10 leading-relaxed">
+        <div>
+          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+            Onze dokters werken enkel op afspraak
+          </h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              Gelieve deze afspraak in te boeken via ons online agenda-systeem
+              of telefonisch op het nummer 016 89 90 90 (bij voorkeur in de
+              voormiddag).
+            </li>
+            <li>
+              Gelieve bij het maken van de afspraak steeds zo volledig mogelijk
+              te omschrijven waarvoor u langskomt.
+            </li>
+            <li>
+              Hou er rekening mee dat een gemiddelde consultatie ongeveer 15
+              minuten duurt. Indien u meerdere vragen wenst te behandelen, maakt
+              u dus best meerdere afspraken.
+            </li>
+            <li>
+              Voor meerdere patiënten vragen we u ook meerdere afspraken te
+              maken.
+            </li>
+          </ul>
         </div>
 
-        {/* Center Image */}
-        <div className="flex justify-center">
-          <div className="relative w-full h-64 md:h-72 lg:h-80 rounded-lg overflow-hidden shadow-md">
-            <Image
-              src="/emergency.jpg"
-              alt="Emergency Entrance"
-              fill
-              className="object-cover"
-            />
-          </div>
+        <div>
+          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+            Huisbezoeken
+          </h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              Huisbezoeken dienen steeds telefonisch te worden aangevraagd{" "}
+              <strong>vóór 10 uur</strong> en zijn enkel bedoeld voor mensen die
+              zich om medische redenen niet kunnen verplaatsen.
+            </li>
+            <li>
+              Wij houden bij het inplannen van het huisbezoek rekening met de
+              drukte, beschikbaarheid van de artsen en de dringendheid van de
+              hulpvraag. Hierdoor kunnen we niet altijd tegemoetkomen aan uw
+              voorkeur van arts.
+            </li>
+          </ul>
         </div>
-
-        {/* Right Column */}
-        <div className="space-y-10">
-          <div>
-            <h3 className="flex items-center gap-2 text-xl font-semibold text-gray-900 mb-2">
-              <Check className="text-red-600" /> Telefoonnummer 1733
-            </h3>
-            <p className="text-gray-700">
-              Bij levensbedreigende situaties: bel eerst <strong>112</strong>.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="flex items-center gap-2 text-xl font-semibold text-gray-900 mb-2">
-              <Check className="text-red-600" /> Adres
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Hendrik Consciencestraat 33, 3000 Leuven
-              <br />
-              (langs <strong>Spoed Heilig Hart Ziekenhuis</strong>).
-            </p>
-          </div>
-        </div>
-
       </section>
-
     </div>
   );
-}
+};
+
+export default praktishchePage;

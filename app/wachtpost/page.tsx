@@ -47,7 +47,7 @@ const WachtpostPage = () => {
         {/* Center Image */}
         <div className="flex justify-center">
           <Image
-            src="/emergency.jpg" // 🧠 place this in /public
+            src="/emergency.jpg" 
             alt="Emergency Entrance"
             width={400}
             height={250}

@@ -27,11 +27,11 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm">
             <li><Link href="#" className="hover:underline">Welkom</Link></li>
-            <li><Link href="#" className="hover:underline">Team</Link></li>
-            <li><Link href="#" className="hover:underline">Afspraak maken</Link></li>
-            <li><Link href="#" className="hover:underline">Praktische info</Link></li>
-            <li><Link href="#" className="hover:underline">Wachtpost</Link></li>
-            <li><Link href="#" className="hover:underline">Contact</Link></li>
+            <li><Link href="team" className="hover:underline">Team</Link></li>
+            <li><Link href="afspraak" className="hover:underline">Afspraak maken</Link></li>
+            <li><Link href="praktische-info" className="hover:underline">Praktische info</Link></li>
+            <li><Link href="wachtpost" className="hover:underline">Wachtpost</Link></li>
+            <li><Link href="contact" className="hover:underline">Contact</Link></li>
           </ul>
         </div>
 
