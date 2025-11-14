@@ -5,8 +5,8 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "My Next App",
-  description: "Website with Top Bar and Nav Bar",
+  title: "praktijk groenendijk",
+  description: "Best medical specialist in belgium",
 };
 
 export default function RootLayout({
