@@ -3,16 +3,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
-const News = () => {
+const Medicine = () => {
   return (
     <section className="bg-white py-16 px-4 md:px-12 lg:px-20">
       {/* Section Title */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
-          METEOPATHY
+          HERBAL MOTHER TINCTURES
         </h2>
-        <p>A New Holistic Art of Cure "Ambienta Ambientus Curantur"</p>
+        <p>Extracting Nature’s Healing Essence from Every Herb</p>
         <div className="w-24 h-[2px] bg-[#2AAA8A] mx-auto"></div>
       </div>
 
@@ -21,7 +22,7 @@ const News = () => {
         {/* Image */}
         <div className="relative w-full md:w-1/3 aspect-[4/3] flex-shrink-0 rounded-lg overflow-hidden">
           <Image
-            src="/Meteopathy.jpeg"
+            src="/harbal-img.jfif"
             alt="The Founder of Meteopathy"
             fill
             className="object-cover"
@@ -31,27 +32,19 @@ const News = () => {
         {/* Content */}
         <div className="flex-1 text-gray-800">
           <h3 className="text-xl md:text-2xl font-semibold mb-2">
-            The Founder of Meteopathy
+            Herbal Mother Tinctures
           </h3>
-          <p className="text-sm text-gray-600 mb-4">
-            <span className="font-semibold">A. G. Qaiser Moghal</span> ·
-            Biography
-          </p>
+
           <p className="text-base text-gray-700 leading-relaxed mb-6">
-            Meteopathy is a holistic natural cure based on the law of
-            “Interaction” — "Ambienta Ambientus Curantur", meaning the
-            environment can both cause diseases and provide cures. It treats the
-            human body on three levels: physical, mental, and spiritual, using
-            non-toxic remedies, diluted mother tinctures, and therapeutic
-            techniques like cupping, massage, and relaxation therapies. <br />
-            <br />
-            The approach considers both individual temperament and environmental
-            factors to provide preventive and curative treatment, making it
-            safe, natural, and compatible with other therapies.
+            These are mother tinctures of different herbs, prepared using a
+            traditional method to extract the therapeutic essence of each plant.
+            Mother tinctures are highly concentrated liquid extracts that retain
+            the natural healing properties of herbs, supporting overall
+            wellness, immunity, and balance in the body.
           </p>
 
           <Link
-            href="/meteopathy"
+            href="/herbal"
             className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-md"
           >
             Read more
@@ -62,4 +55,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Medicine;

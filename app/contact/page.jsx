@@ -8,12 +8,8 @@ const ContactPage = () => {
       {/* 🔹 Header */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Contacteer Ons
+          Contact Us
         </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Hier lees je hoe je contact met ons kunt opnemen als je vragen of
-          opmerkingen hebt.
-        </p>
       </div>
 
       {/* 🔹 Info + Map Grid */}
@@ -22,43 +18,46 @@ const ContactPage = () => {
         <div className="space-y-6">
           {/* Address */}
           <div>
-            <div className="flex items-center gap-2 text-red-700 mb-1">
-              <MapPin className="w-5 h-5" />
-              <h3 className="uppercase text-sm font-semibold tracking-wide">
+            <div className="flex items-center gap-2 text-[#2AAA8A] mb-1">
+              <MapPin className="w-5 h-5 text-[#2AAA8A]" />
+              <h3 className="uppercase text-sm font-semibold tracking-wide text-[#2AAA8A]">
                 Adres
               </h3>
             </div>
+
             <p className="text-gray-800">
-              Vanden Tymplestraat 45 / 0001 – 3000 Leuven
+              Pak-Swiss Unani Herbal Clinic Mughal Point Kamala Road Mehmooda
+              Abad Near Tariq Narsary Chock Jhelum
             </p>
             <hr className="border-t border-red-200 mt-3" />
           </div>
 
           {/* Phone */}
           <div>
-            <div className="flex items-center gap-2 text-red-700 mb-1">
-              <Phone className="w-5 h-5" />
-              <h3 className="uppercase text-sm font-semibold tracking-wide">
+            <div className="flex items-center gap-2 text-[#2AAA8A] mb-1">
+              <Phone className="w-5 h-5 text-[#2AAA8A]" />
+              <h3 className="uppercase text-sm font-semibold tracking-wide text-[#2AAA8A]">
                 Telefoon
               </h3>
             </div>
-            <p className="text-gray-800">016 89 90 90</p>
-            <hr className="border-t border-red-200 mt-3" />
+            <p className="text-gray-800">+92 313 5620039</p>
+            <hr className="border-t border-[#2AAA8A] mt-3" />
           </div>
 
           {/* Email */}
           <div>
-            <div className="flex items-center gap-2 text-red-700 mb-1">
-              <Mail className="w-5 h-5" />
-              <h3 className="uppercase text-sm font-semibold tracking-wide">
+            <div className="flex items-center gap-2 text-[#2AAA8A] mb-1">
+              <Mail className="w-5 h-5 text-[#2AAA8A]" />
+              <h3 className="uppercase text-sm font-semibold tracking-wide text-[#2AAA8A]">
                 Email
               </h3>
             </div>
+
             <a
-              href="mailto:tempelhof45@gmail.com"
-              className="text-red-700 hover:underline"
+              href=" info@praktijkgroenendijk.be"
+              className="text-gray-800 hover:underline"
             >
-              tempelhof45@gmail.com
+              moghal.alternativemedicine@gmail.com{" "}
             </a>
             <hr className="border-t border-red-200 mt-3" />
           </div>
@@ -67,11 +66,14 @@ const ContactPage = () => {
         {/* Right Column: Google Map */}
         <div className="w-full h-[350px] md:h-[400px] rounded-lg overflow-hidden shadow-md">
           <iframe
-            title="Map to Clinic"
-            src="https://www.google.com/maps?q=Vanden%20Tymplestraat%2045%2C%203000%20Leuven%2C%20Belgium&output=embed"
-            width="100%"
-            height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.824470797809!2d73.714171!3d32.9556434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f917a4a96f125%3A0x6e61d3523bd593ce!2sPak-Swiss%20Herbal%20Clinic!5e0!3m2!1sen!2s!4v1766047720634!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Pak-Swiss Herbal Clinic Location"
           ></iframe>
         </div>
       </div>
@@ -79,31 +81,20 @@ const ContactPage = () => {
       {/* 🔹 Additional Info Section */}
       <div className="max-w-6xl mx-auto mt-12 space-y-4 text-gray-800">
         <p className="flex items-start gap-2">
-          <ChevronRight className="w-4 h-4 text-red-600 mt-1" />
-          Wij zijn op wandelafstand gelegen van het station van Leuven.
+          <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
+          Our office is located at Islampura Rd, Phallaian, Jhelum.{" "}
         </p>
 
         <p className="flex items-start gap-2">
-          <ChevronRight className="w-4 h-4 text-red-600 mt-1" />
-          Parkeren met de wagen is soms moeilijk. U kan ook terecht in de
-          ondergrondse parkings onder{" "}
-          <strong>
-            Supercity, Minckelersparking of Parking De Bond
-          </strong>{" "}
-          aan het station.
+          <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
+          We provide the following services: - Herbal cure after an accurate
+          diagnosis; - Hijama Therapy; - Islamic psychology (xypniosis)
         </p>
 
         <p className="flex items-start gap-2">
-          <ChevronRight className="w-4 h-4 text-red-600 mt-1" />
-          De ingang van de praktijk is via{" "}
-          <strong>Vanden Tymplestraat 45</strong> (niet de hoekdeur). Onze
-          wachtzaal bevindt zich direct rechts als u binnen komt.
-        </p>
-
-        <p className="flex items-start gap-2">
-          <ChevronRight className="w-4 h-4 text-red-600 mt-1" />
-          Voor mindervalide patiënten of rolstoelgebruikers kunnen wij een
-          oprijramp voorzien. Dit is enkel na afspraak.
+          <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
+          Our remedies are prepared with 💯% pure herbs. - We also visit at home
+          🏠 if you need.
         </p>
       </div>
     </section>
